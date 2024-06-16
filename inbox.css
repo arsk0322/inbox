@@ -52,28 +52,6 @@ table {
     width: 1000px;
 }
 
-.search-bar{
-    display:flex;
-    justify-content: end;
-}
-.header-container{
-    display:flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.search-bar img{
-    width: 30px;
-    height: 30px;
-    margin-top: 20px;
-    margin: 0 auto;
-}
-
-.search-bar a{
-    text-decoration: none;
-    text-align: center;
-}
-
 .search-menu{
     display: flex;
     margin-top: 32px;
