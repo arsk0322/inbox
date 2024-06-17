@@ -49,25 +49,237 @@ table {
 
 .wrap{
     margin: 0 auto;
-    width: 1000px;
+    width: 1200px;
 }
-
-.search-menu{
+.header-top{
     display: flex;
-    margin-top: 32px;
-}
-
-.search-menu li{
-    margin-top: 70px;
-    padding: 40px;
-}
-
-.search-menu a{
-    color: #000;
-    text-decoration: none;
+    line-height: 150px;
     text-align: center;
 }
 
-.search-menu a:hover{
-    color: orangered;
+.header-top a{
+    width:150px;
+    height:150px;
+}
+
+.header-top img{
+    width:150px;
+    height:150px;
+}
+
+.header-middle{
+    text-align: center;
+    font-size: 30px ;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header-end{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: whitesmoke;
+}
+
+.dropdown {
+    position: relative;
+    width: 120px;
+  }
+  
+  /* 描述下拉選單按鈕 */
+  .dropdown-btn {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    line-height: 40px;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+  }
+  
+
+  /* 描述下拉選單 */
+  .dropdown>.menu {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    /* 預設menu為隱藏 */
+    display: none;
+  }
+  
+  /* 描述hover後的下拉選單 */
+  .dropdown:hover>.menu {
+    display: block;
+  }
+  
+  /* 描述下拉選單裡的按鈕 */
+  .dropdown>.menu a {
+    text-decoration: none;
+    background: white;
+    color: gray;
+    display: block;
+    padding: 5px 0;
+    text-align: center;
+    transition: all .5s ease;
+  }
+  
+  .dropdown>.menu a:hover {
+    background: #eee;
+  }
+
+.carousel{
+    display: flex;
+    padding-top: 70px;
+}
+.carousel .container{
+    position: relative;
+    left: 0;
+    display: flex;
+}
+
+.carousel .container img{
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.carousel {
+    width: 800px;
+    height: 400px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.carousel .container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    position: relative;
+    left: 0;
+
+    transition: left 1s;
+}
+
+.carousel .container img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    flex-shrink: 0;
+}
+
+.carousel .shift .btn {
+    background-color: teal;
+    color: white;
+
+    font-size: 40px;
+    font-weight: bold;
+
+    width: 50px;
+    height: 50px;
+
+    line-height: 50px;
+    text-align: center;
+
+    border-radius: 8px;
+    opacity: 0.5;
+
+    cursor: pointer;
+
+    position: absolute;
+
+    /* 垂直居中 */
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.carousel .shift .left {
+    left: 30px;
+}
+
+.carousel .shift .right {
+    right: 30px;
+}
+
+.carousel:hover .btn {
+    /* 悬浮时显示按钮 */
+    opacity: 1;
+}
+
+.carousel .bottom {
+    position: absolute;
+
+    bottom: 20px;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+    width: max-content;
+
+    display: flex;
+    gap: 10px;
+}
+
+.carousel .bottom .indicator {
+    height: 5px;
+    width: 40px;
+    background-color: teal;
+    opacity: 0.5;
+
+    cursor: pointer;
+}
+.carousel:hover .bottom .indicator {
+    /* 悬浮时显示按钮 */
+    opacity: 1;
+}
+
+.carousel .bottom .indicator.activate {
+    background-color: pink;
+}
+
+.footer{
+    margin-top:50px ;
+}
+.qk-display--il {
+    display: inline;
+}
+
+.media {
+    margin: 0px;
+    padding: 0px;
+}
+
+.qk-svg--footer_text {
+    fill: #fff \0 !important;
+    fill: var(--footer_text) !important;
+}
+
+.media .social_media li:not(:last-child) {
+    margin-right: 16px;
+}
+
+.qk-display--il_bk {
+    display: inline-block;
+}
+
+.instagram-svg .svg-background {
+    visibility: hidden;
+}
+
+.facebook-svg .svg-background, .instagram-svg .svg-background, .line-svg .svg-background, .youtube-svg .svg-background {
+    fill: none;
 }
