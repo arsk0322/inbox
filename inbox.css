@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    width: 2000px;
 }
 ol, ul {
 	list-style: none;
@@ -49,28 +50,71 @@ table {
 
 .wrap{
     margin: 0 auto;
-    width: 800px;
 }
 .header-top{
     display: flex;
-    line-height: 150px;
+    line-height: 30px;
     text-align: center;
 }
 
-.header-top a{
-    width:150px;
-    height:150px;
+.header-top p{
+    padding-top: 85px;
+    font-size: 20px;
+    width: 300px;
 }
 
 .header-top img{
-    width:150px;
-    height:150px;
+    width:200px;
+    height:200px;
+}
+
+.header-right{
+    display: flex;
+    text-align: right;
+    font-size: 30px ;
+    padding-left: 1400px;
+}
+
+.search{
+    display: flex;
+}
+
+.text{
+    display: none;
 }
 
 .header-middle{
     text-align: center;
     font-size: 30px ;
     font-family: 'Times New Roman', Times, serif;
+}
+
+.search a{
+    text-decoration: none;
+    color: #000;
+    margin: 5px;
+}
+
+.search a:hover{
+    color: #434343;
+}
+
+.search li{
+    font-size: 20px;
+}
+
+.cart a{
+    text-decoration: none;
+    color: #000;
+    margin: 5px;
+}
+
+.cart a:hover{
+    color: #434343;
+}
+
+.cart li{
+    font-size: 20px;
 }
 
 .header-end{
@@ -129,127 +173,55 @@ table {
   }
   
   .dropdown>.menu a:hover {
-    background: #eee;
+    background: #fff;
   }
 
-.carousel{
-    display: flex;
-    padding-top: 70px;
-}
-.carousel .container{
+  html,
+  body {
     position: relative;
-    left: 0;
-    display: flex;
-}
+    height: 100%;
+  }
 
-.carousel .container img{
-    width: 300px;
-    height: 300px;
-    flex-shrink: 0;
-    object-fit: cover;
-}
+  body {
+    background: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
 
-.carousel {
-    width: 800px;
-    height: 400px;
+  .swiper {
+    width: 50%;
+    height: 50%;
+  }
 
-    margin: 0 auto;
-
-    overflow: hidden;
-
-    position: relative;
-}
-
-.carousel .container {
+  .swiper-wrapper{
     width: 100%;
     height: 100%;
+    padding: 100px;
+  }
 
-    display: flex;
-
-    position: relative;
-    left: 0;
-
-    transition: left 1s;
-}
-
-.carousel .container img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    flex-shrink: 0;
-}
-
-.carousel .shift .btn {
-    background-color: teal;
-    color: white;
-
-    font-size: 40px;
-    font-weight: bold;
-
-    width: 50px;
-    height: 50px;
-
-    line-height: 50px;
+  .swiper-slide {
     text-align: center;
-
-    border-radius: 8px;
-    opacity: 0.5;
-
-    cursor: pointer;
-
-    position: absolute;
-
-    /* 垂直居中 */
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-.carousel .shift .left {
-    left: 30px;
-}
-
-.carousel .shift .right {
-    right: 30px;
-}
-
-.carousel:hover .btn {
-    /* 悬浮时显示按钮 */
-    opacity: 1;
-}
-
-.carousel .bottom {
-    position: absolute;
-
-    bottom: 20px;
-    left: 0;
-    right: 0;
-
-    margin: auto;
-    width: max-content;
-
+    font-size: 18px;
+    background: #fff;
     display: flex;
-    gap: 10px;
-}
+    justify-content: center;
+    align-items: center;
+  }
 
-.carousel .bottom .indicator {
-    height: 5px;
-    width: 40px;
-    background-color: teal;
-    opacity: 0.5;
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-    cursor: pointer;
-}
-.carousel:hover .bottom .indicator {
-    /* 悬浮时显示按钮 */
-    opacity: 1;
-}
-
-.carousel .bottom .indicator.activate {
-    background-color: pink;
-}
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 .footer{
     margin-top:50px ;
@@ -263,23 +235,67 @@ table {
     padding: 0px;
 }
 
-.qk-svg--footer_text {
-    fill: #fff \0 !important;
-    fill: var(--footer_text) !important;
+.community{
+    display: flex;
 }
 
-.media .social_media li:not(:last-child) {
-    margin-right: 16px;
+.lightbox-wrap{
+    text-align: center;
+}
+.ig a{
+    text-decoration: none;
+    color: #000;
+    margin: 5px;
 }
 
-.qk-display--il_bk {
-    display: inline-block;
+.ig a:hover{
+    color: #434343;
 }
 
-.instagram-svg .svg-background {
-    visibility: hidden;
+.ig a:before{
+    margin-right: 15px;
 }
 
-.facebook-svg .svg-background, .instagram-svg .svg-background, .line-svg .svg-background, .youtube-svg .svg-background {
-    fill: none;
+.ig li{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+
+.fb a{
+    text-decoration: none;
+    color: #000;
+    margin: 5px;
+}
+
+.fb a:hover{
+    color: #196ab6;
+}
+
+.fb a:before{
+    margin-right: 15px;
+}
+
+.fb li{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.line a{
+    text-decoration: none;
+    color: #000;
+    margin: 5px;
+}
+
+.line a:hover{
+    color: #23b823;
+}
+
+.line a:before{
+    margin-right: 15px;
+}
+
+.line li{
+    margin-bottom: 20px;
+    font-size: 30px;
 }
